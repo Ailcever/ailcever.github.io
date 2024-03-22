@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            我的博客
+            Qt(5.14.2)安装MySQL驱动(免编译)
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -38,7 +38,7 @@
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">我的博客</h1>
+                <h1 class="header-subtitle">Qt(5.14.2)安装MySQL驱动(免编译)</h1>
                 <div class="header-subinfo">
                     <p class="article-info-text">
                         <span>
@@ -46,7 +46,7 @@
                         </span>
                         
                             
-                                <span id="/posts/3641664426/" class="leancloud_visitors" data-flag-title="我的博客">
+                                <span id="/posts/3641664426/" class="leancloud_visitors" data-flag-title="Qt(5.14.2)安装MySQL驱动(免编译)">
                                     <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
                                 </span>
                             
@@ -71,7 +71,28 @@
         <div id="article">
             <div class="toc"></div>
             <div class="article-body">
-                
+                <h2 id="Qt-5-14-2-安装MySQL驱动-免编译"><a href="#Qt-5-14-2-安装MySQL驱动-免编译" class="headerlink" title="Qt(5.14.2)安装MySQL驱动(免编译)"></a>Qt(5.14.2)安装MySQL驱动(免编译)</h2><h3 id="1-确定数据库与编译器版本"><a href="#1-确定数据库与编译器版本" class="headerlink" title="1.确定数据库与编译器版本"></a>1.确定数据库与编译器版本</h3><ul>
+<li><p>数据库和QT都是相同位（如都是64位）的编译器</p>
+</li>
+<li><p>下载的驱动的版本号和编译器 要与 QT版本及编译器器相同</p>
+</li>
+<li><p>查看QT版本号和编译器：项目–&gt;Debug–&gt;构建套件</p>
+</li>
+</ul>
+<p><img src="/image-1.png" alt="Alt text"></p>
+<p>本例版本号：5.14.2</p>
+<p>本例编译器：MinGW 64-bit</p>
+<h3 id="1-下载mysql"><a href="#1-下载mysql" class="headerlink" title="1. 下载mysql"></a>1. 下载mysql</h3><p><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">mysql下载地址</a></p>
+<h3 id="1-下载驱动链接"><a href="#1-下载驱动链接" class="headerlink" title="1. 下载驱动链接"></a>1. 下载驱动链接</h3><p><a target="_blank" rel="noopener" href="https://github.com/thecodemonkey86/qt_mysql_driver">驱动下载地址</a></p>
+<p>找到对应版本的MYSQL驱动下载</p>
+<p><img src="/image.png" alt="Alt text"></p>
+<h3 id="2-拷贝驱动文件"><a href="#2-拷贝驱动文件" class="headerlink" title="2. 拷贝驱动文件"></a>2. 拷贝驱动文件</h3><ul>
+<li><p>将文件夹qsqlmysql.dll_Qt_SQL_driver_5.14.2_MinGW_64-Bit下的动态库文件libmysql.dll复制，拷贝到Qt5.14.2&#x2F;5.14.2&#x2F;mingw73_64&#x2F;bin</p>
+</li>
+<li><p>将文件夹qsqlmysql.dll_Qt_SQL_driver_5.14.2_MinGW_64-Bit&#x2F;debug&#x2F;sqldrivers下的qsqlmysql.dll复制，拷贝到Qt5.14.2\5.14.2\mingw73_64\plugins\sqldrivers</p>
+</li>
+</ul>
+
                 
                 <p class="end">__END__</p>
             </div>
@@ -83,7 +104,7 @@
     <div class="suffix-box-right">
         <span class="suffix-box-title">文章作者：</span>Live For Code
         <br>
-        <span class="suffix-box-title">文章出处：</span><a href="/posts/3641664426/" target="_blank">我的博客</a>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/3641664426/" target="_blank">Qt(5.14.2)安装MySQL驱动(免编译)</a>
         <br>
         <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
         <br>
